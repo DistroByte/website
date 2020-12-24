@@ -34,6 +34,7 @@ ul li a {
   font-size: 16px;
   text-decoration: none; /* removes the underline from a hyperlink */
   color: black;
+  border-radius: 10px;
 }
 
 ul li a:hover {
@@ -43,4 +44,9 @@ ul li a:hover {
 ul li a:visited {
   text-decoration: none;
   color: black;
+}
+
+div#head h1 a:hover {
+  background-color: rgb(194, 194, 194);
+  border-radius: 10px;
 }
