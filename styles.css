@@ -50,3 +50,51 @@ div#head h1 a:hover {
   background-color: rgb(194, 194, 194);
   border-radius: 10px;
 }
+
+#contact {
+  max-width: 40%;
+}
+
+input,
+textarea {
+  display: list-item;
+  font-family: sans-serif;
+  padding: 10px;
+  font-size: 14px;
+  width: max(50%, 250px);
+  background-color: rgb(197, 197, 201);
+  color: black;
+  border: hidden;
+  border-radius: 5px;
+}
+
+textarea {
+  padding: 10px;
+  width: 100%;
+  resize: none;
+}
+
+input[type='submit'] {
+  font-family: 'Lato', sans-serif;
+  margin-top: 10px;
+  font-size: 18px;
+  border-width: 3px;
+  width: 250px;
+  color: black;
+  border: 3px solid rgb(197, 197, 201);
+  border-radius: 5px;
+  /* float: right; */
+  cursor: pointer;
+}
+
+input[type='submit']:hover {
+  background-color: rgb(120, 125, 129);
+}
+
+#contactInfo {
+  float: right;
+}
+
+#contactInfo p a {
+  text-decoration: underline;
+}
