@@ -23,6 +23,7 @@
       <li><a href="http://student.computing.dcu.ie/~hacketj5/portfolio" target="_blank"
           rel="noopener noreferrer">Portfolio</a></li>
       <li><a href="pages/links/">Useful Links</a></li>
+      <li><a href="#contact">Contact me</a></li>
       </p>
     </ul>
   </div>
@@ -32,7 +33,47 @@
 
   <!-- TODO: add achievements -->
 
-  <!-- TODO: add contact form -->
+  <div id="contactInfo">
+    <h3>My contact details</h3>
+    <p>Name: James Hackett</p>
+    <p>Email: <a href="https://mail.google.com/mail/?view=cm&source=mailto&to=[jamesthackett1@gmail.com]"
+        target="_blank" rel="noopener noreferrer">jamesthackett1@gmail.com</a>
+    </p>
+    <p>Phone: (+353) 89 455 1813</p>
+    <p>Location: Ballina, Co. Mayo</p>
+  </div>
+
+  <div id="contact">
+    <h2>Contact</h2>
+    <form action="https://formspree.io/f/xgeppygr" method="post">
+      <div class="text">
+        <p>Name</p>
+        <input class="text-box" id="contact-name" type="text" name="contact-name" placeholder="Name"
+          autocomplete="off" />
+      </div>
+      <div class="text">
+        <p>Email</p>
+        <input class="text-box" id="contact-email" type="email" name="contact-email" placeholder="Email"
+          autocomplete="off" />
+      </div>
+      <div class="text">
+        <p>Phone</p>
+        <input class="text-box" id="contact-phone" type="tel" name="contact-phone" placeholder="Phone number"
+          autocomplete="off" />
+      </div>
+      <div class="text">
+        <p>Message</p>
+        <textarea class="text-box" id="contact-message" name="contact-message" rows="5" placeholder="Message"
+          autocomplete="off"></textarea>
+      </div>
+      <div>
+        <input class="button" type="submit" value="Send message" />
+      </div>
+    </form>
+  </div>
+
+  <hr>
+
 </body>
 
 </html>
