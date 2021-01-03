@@ -55,8 +55,8 @@ div#head h1 a:hover {
   max-width: 40%;
 }
 
-input,
-textarea {
+#contact input,
+#contact textarea {
   display: list-item;
   font-family: sans-serif;
   padding: 10px;
@@ -97,4 +97,65 @@ input[type='submit']:hover {
 
 #contactInfo p a {
   text-decoration: underline;
+}
+
+code {
+  font-size: 16px;
+  color: navy;
+  background-color: rgb(255, 200, 200);
+}
+
+p.hidden {
+  display: none;
+}
+
+.sliderWrapper {
+  display: inline-block;
+  position: relative;
+}
+.sliderWrapper div {
+  display: inline-block;
+  line-height: 30px;
+}
+/* The switch - the box around the slider */
+.switch {
+  vertical-align: middle;
+  position: relative;
+  display: inline-block;
+  padding: 0px;
+  width: 32px;
+  height: 18px;
+}
+/* Hide default HTML checkbox */
+.switch input {
+  display: none;
+}
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #d7d7d7;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.slider:before {
+  position: absolute;
+  content: '';
+  height: 16px;
+  width: 17px;
+  left: 1px;
+  bottom: 1px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(13px);
+  -ms-transform: translateX(13px);
+  transform: translateX(13px);
 }
