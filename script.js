@@ -5,13 +5,11 @@
 window.onload = function () {
   try {
     document.getElementById('contact-message').value = '';
+    toggleDirFile();
   } catch (e) { }
 }
 
 var dirFileState = "block"
-var dateState = "none"
-var sizeState = "none"
-var bothState = "none"
 
 function toggleDirFile() {
   if (dirFileState === "none") {
@@ -27,42 +25,4 @@ function toggleDirFile() {
     document.getElementById("dirs").style.display = "none";
     document.getElementById("files").style.display = "block";
   }
-}
-
-function showDate() {
-  console.log(dateState);
-  if (dateState === "none") {
-    dateState = "block";
-  }
-
-  if (dateState === "block" && dirFileState === "block") {
-    document.getElementById("dirsDates").style.display = "block";
-    document.getElementById("dirs").style.display = "none";
-  } else {
-    document.getElementById("dirsDates").style.display = "none";
-    document.getElementById("dirs").style.display = "block";
-  }
-}
-
-function showSize() {
-
-}
-
-function showBoth() {
-
-}
-
-function showNone() {
-  dateState = "none";
-  sizeState = "none";
-  bothState = "none";
-  if (dirFileState === "block") {
-    document.getElementById("dirs").style.display = "block";
-  } else {
-    document.getElementById("files").style.display = "block";
-  }
-  document.getElementById("dirsDates").style.display = "none";
-  document.getElementById("filesDates").style.display = "none";
-  document.getElementById("filesSizes").style.display = "none";
-  document.getElementById("filesDatesSizes").style.display = "none";
 }
