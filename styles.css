@@ -126,12 +126,23 @@ div#splash h2#splash-text {
 
 /* Link Styling */
 
-.tidy-link {
+.tidy-link a {
+  color: black;
+  text-decoration: underline;
+}
+
+.tidy-link a:hover {
+  border-bottom: 2px solid rgb(0, 66, 141);
+  color: rgb(0, 56, 119);
+  text-decoration: none;
+}
+
+.hidden-link {
   text-decoration: none;
   color: black;
 }
 
-.tidy-link:hover {
+.hidden-link:hover {
   border-bottom: 2px solid rgb(0, 66, 141);
   color: rgb(0, 56, 119);
 }
