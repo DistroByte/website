@@ -7,46 +7,62 @@
   <meta name="description" content="James Hackett" />
   <title>Home</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
   <script src="script.js"></script>
 </head>
 
 <body>
-  <div id="head">
-    <h1><a href="../">James Hackett</a></h1>
-  </div>
-  <div>
-    <p>1st Year Computer Applications student in DCU</p>
-    <ul>
-      <li><a href="./">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="http://student.computing.dcu.ie/~hacketj5/portfolio" target="_blank"
-          rel="noopener noreferrer">Portfolio</a></li>
-      <li><a href="pages/links/">Useful Links</a></li>
-      <li><a href="pages/dcu">DCU Resources</a></li>
-      <li><a href="#contact">Contact me</a></li>
-      </p>
-    </ul>
-  </div>
+  <header>
+    <div class="header-content">
+      <nav class="header-nav">
+        <ul>
+          <li><a id="logo" href="./">James Hackett</a></li>
+          <li><a href="#contact">Contact me</a></li>
+          <li><a href="pages/dcu">DCU Resources</a></li>
+          <li><a href="pages/links/">Useful Links</a></li>
+          <li><a href="#about">About</a></li>
+          </p>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
   <hr>
 
-  <div id="welcome">
-    <h2>Welcome</h2>
-    <p>Hey there! Welcome to my website. Here you will find all sorts of things from projects that I do and things I
-      save. From DCU Computer Applications files to dashboards for my Discord bots.</p>
+  <div id="splash">
+    <h2 id="splash-text">Hi, I'm James Hackett, a Computer Applications student in 1st year in Dublin City University
+    </h2>
+  </div>
+
+  <div class="two-column-container">
+    <div class="two-column">
+      <div>
+        <h3>About Me</h3>
+        <p>My name is James Hackett, I'm a first year student in DCU Computer
+          Applications and I like all things technology, canoing and music.</p>
+        <p>This website is hosted locally on a server that also runs <a href="https://md.james-hackett.ie">Hedgedoc</a>
+          and
+          <a href="pages/dcu/">some file hosting</a>. This website is my homepage. It has <a href="pages/links/">useful
+            links</a> that I often need to access, a discord bot dashboard for <a
+            href="http://www.github.com/DistroByte/ComfyBot" target="_blank" rel="noopener noreferrer">ComfyBot</a> and
+          some other things.
+        </p>
+        <p></p>
+      </div>
+    </div>
+    <div class="two-column">
+      <p>Hi</p>
+    </div>
   </div>
 
   <div id="about">
-    <h2>About Me</h2>
-  </div>
 
-  <!-- TODO: add some about me -->
+  </div>
 
   <!-- TODO: add achievements -->
 
-  <h2>Contact</h2>
+  <!-- <h2>Contact</h2>
 
   <div id="contactInfo">
     <h3>My contact details</h3>
@@ -84,7 +100,7 @@
         <input class="button" type="submit" value="Send message" />
       </div>
     </form>
-  </div>
+  </div> -->
 
   <hr>
 

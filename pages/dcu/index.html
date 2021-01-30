@@ -7,97 +7,53 @@
   <meta name="description" content="James Hackett" />
   <title>DCU Resources</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../styles.css" />
   <script src="../../script.js"></script>
 </head>
 
 <body>
-  <div id="head">
-    <h1><a href="../">James Hackett</a></h1>
-  </div>
-  <div>
-    <p>1st Year Computer Applications student in DCU</p>
-    <ul>
-      <li><a href="../../">Home</a></li>
-      <li><a href="../../#about">About</a></li>
-      <li><a href="http://student.computing.dcu.ie/~hacketj5/portfolio" target="_blank"
-          rel="noopener noreferrer">Portfolio</a></li>
-      <li><a href="../links/">Useful Links</a></li>
-      <li><a href="./">DCU Resources</a></li>
-      <li><a href="../../#contact">Contact me</a></li>
-      </p>
-    </ul>
-  </div>
+  <header>
+    <div class="header-content">
+      <nav class="header-nav">
+        <ul>
+          <li><a id="logo" href="../../">James Hackett</a></li>
+          <li><a href="../../#contact">Contact me</a></li>
+          <li><a href="../dcu">DCU Resources</a></li>
+          <li><a href="../links/">Useful Links</a></li>
+          <li><a href="../../#about">About</a></li>
+          </p>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
   <hr>
 
-  <h2>Directory Tree</h2>
-
-  <div class="sliderWrapper">
-    <div>Directories&nbsp;</div>
-    <label class="switch">
-      <input type="checkbox" name="data" onclick="toggleDirFile()">
-      <span class="slider"></span>
-    </label>
-    <div>
-      &nbsp;Files
-    </div>
+  <div id="splash">
+    <h2 id="splash-text">DCU Resources</h2>
   </div>
+
+  <h3>Directory Tree</h3>
 
   <p id="dirs" style="display: block;">
-    <!-- tree -H '.' -L 4 -F -Q -C --noreport --charset utf-8 -d --dirsfirst > test.html -->
-    <a href=".">home</a><br>
-    ├── <a class="DIR" href="./first/">first</a><br>
-    │   ├── <a class="DIR" href="./first/ca103/">ca103</a><br>
-    │   ├── <a class="DIR" href="./first/ca106/">ca106</a><br>
-    │   ├── <a class="DIR" href="./first/ca116/">ca116</a><br>
-    │   ├── <a class="DIR" href="./first/ca172/">ca172</a><br>
-    │   └── <a class="DIR" href="./first/ms134/">ms134</a><br>
-    ├── <a class="DIR" href="./fourth/">fourth</a><br>
-    ├── <a class="DIR" href="./second/">second</a><br>
-    └── <a class="DIR" href="./third/">third</a><br>
+    <!-- tree -H '.' -L 4 -F -Q -C --charset utf-8 -d --dirsfirst -->
+    <a class="NORM" href=".">.</a><br>
+    └── <a class="DIR" href="./1st/">1st</a><br>
+    &nbsp;&nbsp;&nbsp; ├── <a class="DIR" href="./1st/semester1/">semester1</a><br>
+    &nbsp;&nbsp;&nbsp; │ ├── <a class="DIR" href="./1st/semester1/ca103/">ca103</a><br>
+    &nbsp;&nbsp;&nbsp; │ ├── <a class="DIR" href="./1st/semester1/ca106/">ca106</a><br>
+    &nbsp;&nbsp;&nbsp; │ ├── <a class="DIR" href="./1st/semester1/ca116/">ca116</a><br>
+    &nbsp;&nbsp;&nbsp; │ ├── <a class="DIR" href="./1st/semester1/ca172/">ca172</a><br>
+    &nbsp;&nbsp;&nbsp; │ └── <a class="DIR" href="./1st/semester1/ms134/">ms134</a><br>
+    &nbsp;&nbsp;&nbsp; └── <a class="DIR" href="./1st/semester2/">semester2</a><br>
+    &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; └── <a class="DIR" href="./1st/semester2/ca115/">ca115</a><br>
     <br><br>
   </p>
-
-  <p id="files" style="display: none;">
-    <!-- tree -H '.' -L 4 -F -Q -C --noreport --charset utf-8 --dirsfirst > test.html -->
-    <a href=".">home/</a><br>
-    ├── <a class="DIR" href="./first/">first</a>/<br>
-    │   ├── <a class="DIR" href="./first/ca103/">ca103</a>/<br>
-    │   │   ├── <a class="NORM" href="./first/ca103/Assignment-9th-Oct.wav">Assignment-9th-Oct.wav</a><br>
-    │   │   ├── <a class="NORM" href="./first/ca103/Binary_notes.pdf">Binary_notes.pdf</a><br>
-    │   │   ├── <a class="NORM" href="./first/ca103/CA_103_Assignment_6th_Nov.wav">CA_103_Assignment_6th_Nov.wav</a><br>
-    │   │   ├── <a class="NORM"
-      href="./first/ca103/Computer_Systems_Assignment_(Due_Friday_9th).pdf">Computer_Systems_Assignment_(Due_Friday_9th).pdf</a><br>
-    │   │   ├── <a class="NORM"
-      href="./first/ca103/How_Computers_Work_(Assignment_6th_Nov).pdf">How_Computers_Work_(Assignment_6th_Nov).pdf</a><br>
-    │   │   ├── <a class="NORM"
-      href="./first/ca103/Lecture_2_(Number_Systems).pdf">Lecture_2_(Number_Systems).pdf</a><br>
-    │   │   ├── <a class="NORM" href="./first/ca103/Logic.pdf">Logic.pdf</a><br>
-    │   │   └── <a class="NORM" href="./first/ca103/Week_10_Assignment.pdf">Week_10_Assignment.pdf</a><br>
-    │   ├── <a class="DIR" href="./first/ca106/">ca106</a>/<br>
-    │   │   ├── <a class="NORM" href="./first/ca106/Lecture_1.pdf">Lecture_1.pdf</a><br>
-    │   │   └── <a class="NORM" href="./first/ca106/Lecture_2.pdf">Lecture_2.pdf</a><br>
-    │   ├── <a class="DIR" href="./first/ca116/">ca116</a>/<br>
-    │   │   └── <a class="NORM" href="./first/ca116/google_drive.lnk">google_drive.lnk</a><br>
-    │   ├── <a class="DIR" href="./first/ca172/">ca172</a>/<br>
-    │   │   ├── <a class="NORM" href="./first/ca172/Learning Portfolio.pdf">Learning Portfolio.pdf</a><br>
-    │   │   ├── <a class="NORM" href="./first/ca172/Lecture_2.pdf">Lecture_2.pdf</a><br>
-    │   │   ├── <a class="NORM" href="./first/ca172/Week_5_Assignment.pdf">Week_5_Assignment.pdf</a><br>
-    │   │   └── <a class="NORM" href="./first/ca172/Week_6_-_Assignment.pdf">Week_6_-_Assignment.pdf</a><br>
-    │   └── <a class="DIR" href="./first/ms134/">ms134</a>/<br>
-    │   &nbsp;&nbsp;&nbsp; ├── <a class="NORM" href="./first/ms134/Allnotes.pdf">Allnotes.pdf</a><br>
-    │   &nbsp;&nbsp;&nbsp; ├── <a class="NORM"
-      href="./first/ms134/quick_lc_maths_reference.pdf">quick_lc_maths_reference.pdf</a><br>
-    │   &nbsp;&nbsp;&nbsp; └── <a class="NORM" href="./first/ms134/reviewsheet2020.pdf">reviewsheet2020.pdf</a><br>
-    ├── <a class="DIR" href="./fourth/">fourth</a>/<br>
-    ├── <a class="DIR" href="./second/">second</a>/<br>
-    ├── <a class="DIR" href="./third/">third</a>/<br>
-    <br><br>
-  </p>
-
   <hr>
+
+  <h3>1st Year Semester 2 Notes etc.</h3>
+  <p><a class="tidy-link" href="https://md.james-hackett.ie/s/cPWKnj0kN">Hedgedoc link</a></p>
 </body>
 
 </html>
