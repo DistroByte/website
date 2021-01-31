@@ -57,14 +57,57 @@
 
   <hr>
 
-  <footer class="two-column-container">
-    <div class="two-column">
-      James Hackett | 2021
+  <footer class="three-column-container">
+    <div class="three-column">
+      <h3 id="contact">Contact Me</h3>
+      <h5>Contact Form</h5>
+      <form action="https://formspree.io/f/xgeppygr" method="post">
+        <div class="text">
+          <label for="contact-name">Name</label>
+          <input class="text-box" id="contact-name" type="text" name="contact-name" placeholder="Name"
+            autocomplete="off" />
+        </div>
+        <div class="text">
+          <label for="contact-email">Email</label>
+          <input class="text-box" id="contact-email" type="email" name="contact-email" placeholder="Email"
+            autocomplete="off" />
+        </div>
+        <div class="text">
+          <label for="contact-phone">Phone</label>
+          <input class="text-box" id="contact-phone" type="tel" name="contact-phone" placeholder="Phone number"
+            autocomplete="off" />
+        </div>
+        <div class="text">
+          <label for="contact-message">Message</label>
+          <textarea class="text-box" id="contact-message" name="contact-message" rows="3" placeholder="Message"
+            autocomplete="off"></textarea>
+        </div>
+        <div class="button">
+          <input class="button" type="submit" value="Send message" />
+        </div>
+      </form>
     </div>
-    <div class="two-column" style="text-align: right;">
-      <a class="hidden-link" href="../../#contact">Contact</a>
+    <div class="three-column">
+      <h3>James Hackett | 2021</h3>
+      <h5>Contact Information</h5>
+      <p>Name: James Hackett</p>
+      <p class="tidy-link">Email: <a href="mailto:jamesthackett1@gmail.com">jamesthackett1@gmail.com</a>
+      </p>
+      <p>Phone: (+353) 89 455 1813</p>
+      <p>Location: Ballina, Co. Mayo</p>
+    </div>
+    <div class="three-column">
+      <h3>Social Links</h3>
+      <div class="image-link">
+        <a href="https://www.github.com/DistroByte" target="_blank" rel="noopener noreferrer"><img
+            src="../../images/GitHub.png"></a>
+        <a href="http://www.linkedin.com/james-t-hackett" target="_blank" rel="noopener noreferrer"><img
+            src="../../images/linkedin.png"></a>
+      </div>
     </div>
   </footer>
+  <hr>
+  <br>
 </body>
 
 </html>
